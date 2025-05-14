@@ -53,6 +53,90 @@ body {
     border-radius: 30px;
 }
 
+.background-services {
+    background-image: url("img/background-services.svg");
+}
+
+.additional__services {
+    margin: 0 160px;
+}
+
+.services__description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services__description .description__text{
+    font-size: 18px;
+}
+
+.services__description .title{
+    margin: 0;
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.service .description__text {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 345px;
+    height: 130px;
+    z-index: 1;
+}
+
+.service__picture {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    z-index: 2;
+}
+
+.service__picture img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.service__picture.border__red {
+    border-radius: 100%;
+    margin-right: -40px;
+    backdrop-filter: blur(22px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .background__aboutus {
     background-image: url("img/background-footer.svg");
     background-repeat: no-repeat;
@@ -178,11 +262,6 @@ body {
     display: none;
 }
 
-
-
-
-
-
 .background__last {
     background-image: url("img/background-footer.svg");
 }
@@ -196,7 +275,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 30px 196px;
-    backdrop-filter: blur(21.700000762939453px)
+    backdrop-filter: blur(22px);
 }
 
 .popular {
@@ -264,7 +343,6 @@ body {
     text-decoration: none;
     font-family: inherit;
     align-items: center;
-
 }
 
 .contacts {
