@@ -93,6 +93,11 @@ body {
     background-image: url("img/background-footer.svg");
 }
 
+.ask__questions {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
 .question__item {
     display: flex;
     flex-direction: column;
