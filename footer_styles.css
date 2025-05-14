@@ -33,11 +33,20 @@ body {
     --max-width: 1600px;
 }
 
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+a:hover {
+    color: var(--color-primary);
+}
+
 .pre-line {
     white-space: pre-line;
 }
 
-.title {
+.about-us__title, .questions__title, .command__title {
     font-family: 'Disket', sans-serif;
     font-size: 60px;
     line-height: 55px;
@@ -137,14 +146,14 @@ body {
 
 
 
-.background__aboutus {
+.bg__about-us {
     background-image: url("img/background-footer.svg");
     background-repeat: no-repeat;
     background-color: rgba(11, 2, 38, 1);
     padding: 160px 0;
 }
 
-.about__us {
+.about-us {
     max-width: var(--max-width);
     margin: 0 auto;
 }
@@ -170,7 +179,7 @@ body {
     margin: 30px 0 50px 0;
 }
 
-.command__description .title{
+.command__description .command__title{
     margin: 0;
 }
 
@@ -180,12 +189,12 @@ body {
     gap: 40px;
 }
 
-.our__command {
+.command__info-about {
     color: var(--color-text);
     margin: 0;
 }
 
-.specialists {
+.command__specialists {
     color: var(--color-text);
     margin: 0;
     display: flex;
@@ -262,23 +271,24 @@ body {
     display: none;
 }
 
-.background__last {
+.bg__questions {
     background-image: url("img/background-footer.svg");
 }
 
-.ask__questions {
+.questions {
     max-width: var(--max-width);
     margin: 0 auto;
 }
 
-.question__item {
+.question__container {
     display: flex;
     flex-direction: column;
-    padding: 30px 196px;
+    min-width: 1600px;
+    min-height: 555px;
     backdrop-filter: blur(22px);
 }
 
-.popular {
+.questions__container-title {
     font-size: 30px;
     line-height: 35px;
     text-align: center;
@@ -296,9 +306,12 @@ body {
     justify-content: space-between;
     align-items: center;
     position: relative;
+    max-width: 1200px;
+    min-width: 1200px;
+    margin: 0 auto;
 }
 
-.question__last {
+.question:last-child {
     border-bottom: 1px solid;
 }
 
@@ -332,24 +345,21 @@ body {
     margin: 50px auto 0 auto;
 }
 
-.block {
+.footer__links {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.block a {
-    color: var(--color-text);
-    text-decoration: none;
-    font-family: inherit;
-    align-items: center;
-}
-
-.contacts {
+.footer__contacts {
     color: var(--color-text);
     margin: 0;
     justify-content: center;
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+.contacts-address, .contacts-phone, .contacts-email {
+    margin: 0;
 }
