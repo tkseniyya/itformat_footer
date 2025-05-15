@@ -46,7 +46,7 @@ a:hover {
     white-space: pre-line;
 }
 
-.about-us__title, .questions__title, .command__title {
+.about-us__title, .questions__title, .command__title, .services__title {
     font-family: 'Disket', sans-serif;
     font-size: 60px;
     line-height: 55px;
@@ -62,7 +62,7 @@ a:hover {
     border-radius: 30px;
 }
 
-.background-services {
+.bg__services {
     background-image: url("img/background-services.svg");
 }
 
@@ -80,15 +80,25 @@ a:hover {
     font-size: 18px;
 }
 
-.services__description .title{
+.services__description .services__title{
     margin: 0;
 }
 
 .services {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     margin-top: 50px;
+    gap: 20px;
+}
+
+.services__container1, .services__container2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .service {
@@ -97,13 +107,23 @@ a:hover {
     position: relative;
 }
 
-.service .description__text {
+.services__container1 .description__text {
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
     width: 345px;
     height: 130px;
+    z-index: 1;
+}
+
+.services__container2 .description__text {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 480px;
+    height: 100px;
     z-index: 1;
 }
 
@@ -126,6 +146,31 @@ a:hover {
     margin-right: -40px;
     backdrop-filter: blur(22px);
 }
+
+.services__order {
+    display: flex;
+    margin: 50px 100px 0 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services__order .description__text {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.order-btn {
+    width: 400px;
+    height: 70px;
+    border-radius: 50px;
+    border: none;
+    background-color: #960000;
+    cursor: pointer;
+    font-family: inherit;
+    margin: 0;
+
+}
+
 
 
 
@@ -313,6 +358,7 @@ a:hover {
 
 .question:last-child {
     border-bottom: 1px solid;
+    margin-bottom: 30px;
 }
 
 .question p {
