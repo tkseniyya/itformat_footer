@@ -47,7 +47,7 @@ a:hover {
     white-space: pre-line;
 }
 
-.about-us__title, .questions__title, .command__title, .services__title, .technologies__title, .technologies__deadlines-title, .problems__title {
+.about-us__title, .questions__title, .command__title, .services__title, .technologies__title, .technologies__deadlines-title, .problems__title, .sites__title {
     font-family: 'Disket', sans-serif;
     font-size: 60px;
     line-height: 55px;
@@ -71,8 +71,172 @@ a:hover {
     font-family: inherit;
 }
 
+.bg__sites {
+    background-image: url("img/background-sites.png");
+}
+
+.sites {
+    margin: 20px 160px 0 160px;
+}
+
+.sites__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.sites__title {
+    margin: 0;
+}
+
+.sites__description p {
+    font-size: 18px;
+}
+
+.sites__types {
+    display: flex;
+    justify-content: space-between;
+}
+.sites__type {
+    width: 360px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 22px 0;
+    backdrop-filter: blur(14px);
+    position: relative;
+    background: rgba(112, 110, 110, 0.1);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.sites__type::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 30px;
+    padding: 1px;
+    background: linear-gradient(156.88deg, #960000 41.78%, #F6F6F6 49.68%, #960000 62.68%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+.sites__type-icon {
+    margin-bottom: 30px;
+}
+
+.type__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.type__description {
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 30px;
+}
+
+.type__cost {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.type__order {
+    width: 253px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: #960000;
+    cursor: pointer;
+    font-family: inherit;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.type__examples {
+    width: 253px;
+    height: 40px;
+    position: relative;
+    background: transparent;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    color: var(--color-text);
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.type__examples::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px;
+    padding: 2px; /* Толщина границы */
+    background: linear-gradient(90deg, rgba(150, 0, 0, 1), rgba(246, 246, 246, 1), rgba(0, 0, 147, 1));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+.sites__cost {
+    display: flex;
+    justify-content: center;
+}
+
+.sites__cost-btn {
+    width: 517px;
+    height: 80px;
+    border-radius: 50px;
+    border: none;
+    background-color: #960000;
+    cursor: pointer;
+    font-family: inherit;
+    margin: 50px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .bg__problems {
     background-image: url("img/background-problems.png");
+}
+
+.problems {
+    padding-top: 100px;
 }
 
 .problems__description {
@@ -385,7 +549,7 @@ a:hover {
     line-height: 30px;
 }
 
-.order__btn, .help-me__btn, .contact-us__btn{
+.order__btn, .help-me__btn, .contact-us__btn {
     width: 400px;
     height: 70px;
     border-radius: 50px;
@@ -394,7 +558,6 @@ a:hover {
     cursor: pointer;
     font-family: inherit;
     margin: 0;
-
 }
 
 .bg__about-us {
