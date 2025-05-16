@@ -47,7 +47,7 @@ a:hover {
     white-space: pre-line;
 }
 
-.about-us__title, .questions__title, .command__title, .services__title, .technologies__title, .technologies__deadlines-title {
+.about-us__title, .questions__title, .command__title, .services__title, .technologies__title, .technologies__deadlines-title, .problems__title {
     font-family: 'Disket', sans-serif;
     font-size: 60px;
     line-height: 55px;
@@ -63,11 +63,87 @@ a:hover {
     border-radius: 30px;
 }
 
+.description__text {
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--color-text);
+    margin: 0;
+    font-family: inherit;
+}
+
+.bg__problems {
+    background-image: url("img/background-problems.png");
+}
+
+.problems__description {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.problems__container {
+    display: flex;
+    margin: 30px 439px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.problems__container-left, .problems__container-right {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.problem {
+    display: flex;
+    gap: 30px;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(22px);
+    margin: 0 160px 0 160px;
+    padding: 30px 413px;
+}
+
+.contact-us__title {
+    font-weight: 500;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contact-us__description {
+    font-size: 24px;
+    text-align: center;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.contact-us__btn {
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .bg__technologies {
     background-image: url("img/background-technologies.png");
-    /*background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;*/
+    background-position: center;
 }
 
 .technologies {
@@ -309,7 +385,7 @@ a:hover {
     line-height: 30px;
 }
 
-.order__btn, .help-me__btn {
+.order__btn, .help-me__btn, .contact-us__btn{
     width: 400px;
     height: 70px;
     border-radius: 50px;
@@ -338,14 +414,6 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 30px 100px;
-}
-
-.description__text {
-    font-size: 20px;
-    line-height: 20px;
-    color: var(--color-text);
-    margin: 0;
-    font-family: inherit;
 }
 
 .command__description {
